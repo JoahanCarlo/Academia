@@ -1,0 +1,22 @@
+package com.academia.RegistroAcademia.DTO.Entrada;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class EstudianteRequest {
+    private String dniEstudiante;
+    private String nombreEstudiante;
+    private String apellidoEstudiante;
+    private Date fechaNacimiento;
+    private String telefonoEstudiante;
+    private String colegioEstudiante;
+}
